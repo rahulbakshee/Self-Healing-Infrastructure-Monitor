@@ -1,0 +1,57 @@
+﻿server:
+  name: "self-healing-infra-monitor"
+  version: "1.0.0"
+  log_level: "INFO"
+
+resources:
+  metrics:
+    enabled: true
+    providers:
+      - prometheus
+      - cloudwatch
+    prometheus_url: "http://localhost:9090"
+    aws_region: "us-east-1"
+    cache_ttl: 60
+  
+  logs:
+    enabled: true
+    sources:
+      - cloudwatch
+      - kubernetes
+    retention_days: 30
+    max_lines: 10000
+  
+  infrastructure:
+    enabled: true
+    platforms:
+      - aws
+      - kubernetes
+    aws_region: "us-east-1"
+    k8s_namespace: "default"
+    refresh_interval: 300
+
+tools:
+  diagnostics:
+    timeout: 30
+    max_depth: 5
+    enable_ml: false
+  
+  remediation:
+    dry_run_only: false
+    require_approval: true
+    max_retries: 3
+    rollback_on_failure: true
+    allowed_actions:
+      - restart_service
+      - scale_up
+      - scale_down
+      - clear_cache
+      - restart_pod
+  
+  rollback:
+    enabled: true
+    history_retention_days: 7
+    auto_rollback_on_failure: true
+
+database:
+  url: "sqlite+aiosqlite:///./data/shim.db"

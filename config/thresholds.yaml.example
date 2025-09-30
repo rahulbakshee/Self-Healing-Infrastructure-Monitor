@@ -1,0 +1,21 @@
+﻿# Infrastructure health thresholds
+
+metrics:
+  cpu:
+    warning: 70
+    critical: 85
+  memory:
+    warning: 75
+    critical: 90
+  disk:
+    warning: 80
+    critical: 95
+  
+alerts:
+  error_rate:
+    warning: 0.05
+    critical: 0.10
+  
+  response_time:
+    warning: 1000
+    critical: 3000
