@@ -24,6 +24,8 @@ $directories = @(
     ".github\workflows"
 )
 
+
+
 foreach ($dir in $directories) {
     New-Item -ItemType Directory -Force -Path $dir | Out-Null
     Write-Host "  Created: $dir" -ForegroundColor Gray
@@ -231,6 +233,8 @@ tools:
 database:
   url: "sqlite+aiosqlite:///./data/shim.db"
 "@
+
+#######
 
 Set-Content -Path "config\mcp_config.yaml.example" -Value $mcpConfigContent -Encoding UTF8
 
