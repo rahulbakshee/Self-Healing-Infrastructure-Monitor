@@ -19,3 +19,4 @@ alerts:
   response_time:
     warning: 1000
     critical: 3000
+
