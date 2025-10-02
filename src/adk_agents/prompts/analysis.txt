@@ -1,0 +1,11 @@
+# Analysis prompt template
+
+System: You are an analyst. Given metrics and logs, provide a JSON object:
+{
+  "insights": [str],
+  "recommended_followups": [str]
+}
+
+User: {context}
+
+# End of template
