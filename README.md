@@ -297,9 +297,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-- **Author**: Your Name
-- **Email**: your.email@example.com
-- **GitHub**: [@yourusername](https://github.com/yourusername)
+- **Author**: Rahul Bakshee
+- **LinkedIn**: (https://linkedin.com/in/rahulbakshee)
 
 ## 🗺️ Roadmap
 
