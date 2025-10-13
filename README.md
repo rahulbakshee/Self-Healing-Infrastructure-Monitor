@@ -55,6 +55,10 @@ An intelligent infrastructure monitoring system that combines **Model Context Pr
 │  • Audit Logging & Rollback                            │
 └─────────────────────────────────────────────────────────┘
 ```
+> **⚠️ Note**: This project is currently under active development. 
+> Some features and documentation are still being implemented.
+> See the [Roadmap](#-roadmap) section for current status.
+
 
 ## 🚀 Quick Start
 
@@ -69,7 +73,7 @@ An intelligent infrastructure monitoring system that combines **Model Context Pr
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/self-healing-infra-monitor.git
+git clone https://github.com/rahulbakshee/Self-Healing-Infrastructure-Monitor.git
 cd self-healing-infra-monitor
 
 # Create virtual environment
