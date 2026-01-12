@@ -57,7 +57,7 @@ An intelligent infrastructure monitoring system that combines **Model Context Pr
 ```
 > **⚠️ Note**: This project is currently under active development. 
 > Some features and documentation are still being implemented.
-> See the [Roadmap](#-roadmap) section for current status.
+> See the [Roadmap](https://github.com/rahulbakshee/Self-Healing-Infrastructure-Monitor?tab=readme-ov-file#%EF%B8%8F-roadmap) section for current status.
 
 
 ## 🚀 Quick Start
